@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рулетка</title>
+    <link rel="stylesheet" href="../static/styles.css">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+    </style>
+</head>
+<body>
+<img id="image" src="../static/background.jpg" alt="Your Image">
+<div class="image-container" id="image-container">
+    <img class="responsive-img" src="../static/wildberries.svg" alt="">
+</div>
+<div class="app-container" id="app-container">
+    <!--        <div class="profile">-->
+    <!--            <h2>Рулетка призов</h2>-->
+    <!--            <h2>В честь 20-ти летия</h2>-->
+    <!--        </div>-->
+    <div id="spin_the_wheel">
+        <canvas id="wheel" width="350" height="350"></canvas>
+        <div id="spin">SPIN</div>
+        <div class="pointer"></div> <!-- Стрелка для колеса -->
+    </div>
+
+    <div id="modal">
+        <div id="modalContent">
+            <h2 id="modalMessage"></h2>
+            <button id="closeModal">OK</button>
+        </div>
+    </div>
+
+    <div class="ticket-info">
+        <p>Ваши попытки  <br><span id="ticket-count">1</span></p>
+    </div>
+
+
+</div>
+
+
+<script src="../static/script.js"></script>
+</body>
+</html>
